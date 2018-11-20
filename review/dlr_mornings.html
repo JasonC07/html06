@@ -7,8 +7,8 @@
       Review Assignment
 
       DLR Morning Schedule
-      Author: 
-      Date:   
+      Author: Jason and Nick
+      Date:   11/20/18
 
       Filename:   dlr_mornings.html
 
@@ -18,7 +18,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <title>DLR Morning Schedule</title>
    <link href="dlr_reset2.css" rel="stylesheet" />
-   <link href="dlr_styles2.css" rel="stylesheet" />         
+   <link href="dlr_tables2.css" rel="stylesheet" />
+   <link href="dlr_columns2.css" rel="stylesheet" />
+   <link href="dlr_styles2.css" rel="stylesheet" />   
 </head>
 
 <body>
@@ -48,7 +50,57 @@
             5:00 a.m. to 10:30 p.m. <br />You can <a href="#">Listen Live</a> to streaming audio 
             of our broadcast or download programs from our <a href="#">Podcast</a>. 
             <br />Please refer below for our current morning schedule.</p>
-
+	<table class="programs" >
+		<caption>All Times Central</caption>
+		<colgroup>
+			<col id="timeColumn"/>
+			<col class="wDayColumn" span="5"/>
+			<col class="wEndColumn" span="2"/>			
+		</colgroup>
+		<thead>
+		<tr>
+			<th>Time</th>
+			<th>Mon</th>
+			<th>Tue</th>
+			<th>Wed</th>
+			<th>Thu</th>
+			<th>Fri</th>
+			<th>Sat</th>
+			<th>Sun</th>
+		</tr>
+		</thead>
+		<tfoot>
+		<tr>
+			<td colspan="8"> Support your Public Radio Station </td>
+			</tr>
+			</tfoot>
+			<tbody>
+			<tr>
+			<th>5:00 AM</th>
+			<td colspan="5" rowspan="4">Dawn Air</td>
+			<td rowspan="4">Dawn Air Weekends</td>
+			<td rowspan="2">Sunday Magazine</td>
+		</tr>
+		<tr>
+			<th>5:30 AM</th>
+		</tr>
+		<tr>
+			<th>6:00 AM</th>
+			<td rowspan="2">Weekend Reflection</td>
+		</tr>
+		<tr>
+			<th>6:30 AM</th>
+		</tr>
+		<tr>
+			<th>7:00 AM</th>
+			<td colspan="5">Local News</td>
+			<td rowspan="2">Weekend Wrap</td>
+			<td rowspan="2">Radio U</td>
+		</tr>
+		<tr>
+			<th>7:30 AM</th>
+		</tr>
+		
       </section>
       
    </div>
