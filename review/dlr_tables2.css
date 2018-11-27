@@ -21,8 +21,8 @@ table.programs {
 	width: 100%;
 }
 
- table.programs th, table.programs td {
-	border: 1px soild gray;
+ th, td {
+	border: 1px solid gray;
 	vertical-align: top;
 	padding: 5px;
 }
@@ -38,11 +38,11 @@ col#timeColumn{
 	width: 10%;
 }
 
-col#wDayColumns {
+col.wDayColumns {
 	background: rgb(236, 255, 211);
 	width: 11%;
 }
-col#wEndColumns {
+col.wEndColumns {
 	background: rgb(255, 231, 255);
 	width: 17%;
 }
