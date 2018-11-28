@@ -41,28 +41,27 @@
 	<table class="spuzzle" >
 		<caption> Sudoku</caption>
 		<colgroup>
-			<col class="the greenBox" span="3"/>
-			<col class="GoldBox" span="3"/>
-			<col class="greenBox" span="3"/>
+			<col class="greenBox" colspan="3" rowspan="3"/>
+			<col class="GoldBox" colspan="3" rowspan="3">
 		</colgroup>
 		<thead>
 		<tr>
 			<th></th>
 			<th>1</th>
-				<td colspan="3"></td>
-				<td class="the greenBox" span="3"/>
+				<td colspan="3" rowspan="3"></td>
+				<td class="greenBox" colspan="3" rowspan="3"/>
 				<td colspan="3" rowspan="3"></td>
 			<th>2</th>
 			<th>3</th>
 			<th>4</th>
-				<td colspan="3"></td>
-				<td class="GoldBox" span="3"/>
+				<td colspan="3" rowspan="3"></td>
+				<td class="GoldBox" colspan="3" rowspan="3"/>
 				<td colspan="3" rowspan="3"></td>
 			<th>5</th>
 			<th>6</th>
 			<th>7</th>
-				<td colspan="3"></td>
-				<td class="greenBox" span="3"/>
+				<td colspan="3" ></td>
+				<td class="greenBox" colspan="3" rowspan="3"/>
 				<td colspan="3" rowspan="3"></td>
 			<th>8</th>
 			<th>9</th>
@@ -70,27 +69,81 @@
 		</thead>
 		<tbody>
 			<tr>
-				<th></th>
 				<th>A</th>
-					<td colspan="3"></td>
-					<td class="the greenBox" span="3"/>
-					<td colspan="3" rowspan="3"></td>
+				<td rowspan="3" colspan="3" class="greenBox">
+					<table class="subTable">
+						<tr>
+							<td></td>
+							<td></td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>5</td>
+							<td></td>
+						</tr>
+					</table>
+				</td>
+				<td rowspan="3" colspan="3" class="GoldBox">
+					<table class="subTable">
+						<tr>
+							<td>5</td>
+							<td></td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</td>
+				<td rowspan="3" colspan="3" class="greenBox">
+					<table class="subTable">
+						<tr>
+							<td></td>
+							<td>7</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</td>
 				<th>B</th>
 				<th>C</th>
 				<th>D</th>
-					<td colspan="3"></td>
+					<td colspan="3" rowspan="3"></td>
 					<td class="GoldBox" span="3"/>
 					<td colspan="3" rowspan="3"></td>
 				<th>E</th>
 				<th>F</th>
 				<th>G</th>
-					<td colspan="3"></td>
-					<td class="greenBox" span="3"/>
+					<td colspan="3" rowspan="3"></td>
+					<td class="greenBox" colspan="3" rowspan="3"/>
 					<td colspan="3" rowspan="3"></td>
 				<th>H</th>
 				<th>I</th>
 			</tr>
 		</tbody>	
+		</table>
    </section>
 
    <article>
