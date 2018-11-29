@@ -6,8 +6,8 @@
    Case Problem 3
 
    Calendar Style Sheet
-   Author: 
-   Date:   
+   Author: Jason and Nick
+   Date:   11/29/18
 
    Filename:   lht_tables.css
 
@@ -17,7 +17,40 @@
    Mobile Styles: 0px to 640px 
    ===============================
 */
+@media only screen and (max-width: 640px) {
+	table, tbody, tr, td, th, caption {
+		display: block;
+	}
+	thead, h1 {
+		display: none;
+	}
+	caption {
+		color: white;
+		background-color: rgb(24, 24, 24);
+		font-size: 1.5em;
+		line-height: 2em;
+	}
+	td {
+		border: 1px dotted gray;
+		color: rgb(11, 12, 145);
+		position: relative;
+		padding-left: 40%;
+		min-height: 40px;
+	}
+	
+	td::before{
 
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		padding-left: 40%;
+		content: attr(data-date);
+}
+	tr:nth-of-type(odd) {
+		background-color: rgb(255, 235, 178);
+		border: 2px solid gray;
+	}
+}
 
 
 
